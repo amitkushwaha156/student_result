@@ -20,7 +20,7 @@ function App() {
 
   const formSubmit = (e) => {
     e.preventDefault();
-    // get the form data
+   
     const name = NameEle.current.value;
     const math = Number(MathNum.current.value);
     const physics = Number(PhyNum.current.value);
@@ -94,7 +94,7 @@ function App() {
   };
 
   const handleDel = (id) => {
-    // const restData=(GetData.filter((item)=>item._id!==key))
+    // const restData=(GetData.filter((item)=>item.id!==key))
     // console.log(restData)
     dispatch(DeleteStudent(id));
     toast.error("Delete student data");
